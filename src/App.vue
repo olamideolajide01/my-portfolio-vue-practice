@@ -1,32 +1,110 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+ <v-app>
+   <v-app-bar
+   app
+   flat
+   color="grey lighten-5"
+   >
+   <div class="text-center d-flex">
+  <v-icon  color="teal" dark large class="mx-3">mdi-satellite-variant</v-icon>
+   <h2  class="text-center"> oLA<span class="red--text">.</span>Mide</h2>
+   </div>
+
+<v-spacer></v-spacer>
+
+    <span v-show="$vuetify.breakpoint.xsOnly" > <v-btn  @click="drawer=!drawer">
+        <v-icon>mdi-menu</v-icon>
+      </v-btn></span>
+    <div  v-show="!$vuetify.breakpoint.xsOnly">
+    <v-btn  class="mr-1"  small text > <a  @click="$vuetify.goTo('#about')">ABOUT</a></v-btn>
+   <v-btn class="mr-1" small text><a  @click="$vuetify.goTo('#projects')">PROJECTS</a></v-btn>
+   <v-btn class="mr-1" small text><a  @click="$vuetify.goTo('#contact')">CONTACT</a></v-btn>
+   
+  <!-- <a href="#"   class="text-decoration-none"> 
+    <v-btn small class="mr-1" color="teal" outlined >Resume</v-btn></a> -->
+   </div>
+   </v-app-bar>
+
+
+   <v-main class="mx-0 black">
+     <router-view></router-view>
+   </v-main>
+
+
+      <v-navigation-drawer
+      v-model="drawer"
+      app
+        temporary
+        hide-overlay
+        right
+        class="black lighten-2" dark
+        
+        >
+        <v-row justify="end"  class="mt-5 pr-6">
+       <v-btn  @click="drawer=!hideDrawer">  <v-icon color="white">mdi-close</v-icon> </v-btn> 
+          </v-row>
+
+              <v-row  class="mt-5 text-center col-12" justify="center" dense >
+                <v-col cols="12" class="ma-2">
+                <v-btn class="mr-1" text > <a  @click="$vuetify.goTo('#about')">ABOUT</a></v-btn>
+                </v-col>
+                <v-col cols="12" class="ma-2">
+                <v-btn class="mr-1" text ><a  @click="$vuetify.goTo('#projects')">PROJECTS</a></v-btn>
+                </v-col>
+                <v-col cols="12" class="ma-2">
+                <v-btn class="mr-1" text ><a  @click="$vuetify.goTo('#contact')">CONTACT</a></v-btn>
+                </v-col>
+                </v-row>
+                <!-- <v-row justify="center" align="center" class="mt-3">
+                  <a h ref="#"   class="text-decoration-none"> 
+                <v-btn small class="mr-1" color="teal" outlined >Resume</v-btn></a>
+                </v-row> -->
+                    
+            </v-navigation-drawer>
+
+   
+ </v-app> 
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  export default {
+    data() {
+      return {
+        drawer: false,
+       
+        
+      }
+    },
 
-#nav {
-  padding: 30px;
-}
+     computed: {
+    
+    mobile() {
+      return this.$vuetify.breakpoint.smAndDown
+    },
+     },
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    watch: {
+      mobile(newValue) {
+         if (!newValue) {
+        this.hideDrawer()
+      }
+  },
+      group () {
+        this.drawer = false
+    
+    },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+    },
+
+    methods: {
+      hideDrawer(){
+        this.drawer = false;
+    },
+     
+     
+    },
+     }
+</script>
+
+
+
