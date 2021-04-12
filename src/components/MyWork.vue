@@ -41,7 +41,7 @@
         <v-col cols="12" sm="6" md="6" lg="4"  class="mr-n14">
  <div class="text-start">
             <p class="teal--text ">Featured project</p>
-           <a  href="https://laemmyyummies.vercel.ap"  class="text-decoration-none"> 
+           <a  href="https://laemmyyummies.vercel.app"  class="text-decoration-none"> 
             <h3  class="teal--text">LaemmyYummies</h3></a>
             </div>
     <v-card
