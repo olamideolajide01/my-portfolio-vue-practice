@@ -26,6 +26,9 @@
      </v-card-subtitle>
     </v-card>
     <p class=" teal--text text-end">Bootstrap </p>
+   <p class=" teal--text text-end">Javascript </p>
+   <p class=" teal--text text-end">HTML </p>
+   <p class=" teal--text text-end">CSS </p>
         </v-col>    
     </v-row>
 
