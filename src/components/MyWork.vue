@@ -29,8 +29,15 @@
 <v-card-subtitle class="white--text">My first coding,a website app for checking out all kind of pastries and to take orders.
      </v-card-subtitle>
     </v-card>
+<<<<<<< HEAD
     <p class=" teal--text text-end">HTML </p>
     <p class=" teal--text text-end">CSS </p>
+=======
+    <p class=" teal--text text-end">Bootstrap </p>
+   <p class=" teal--text text-end">Javascript </p>
+   <p class=" teal--text text-end">HTML </p>
+   <p class=" teal--text text-end">CSS </p>
+>>>>>>> cccfa7d126c6cf6015cc4cb983d323530e628f31
         </v-col>    
     </v-row>
 
@@ -45,7 +52,11 @@
  <div class="text-start ">
             <p class="teal--text ">Featured project</p>
            <a  href="https://laemmyyummies.vercel.app"  class="text-decoration-none"> 
+<<<<<<< HEAD
         <v-btn plain text>   <h3  class="teal--text">LaemmyYummies</h3></v-btn> </a>
+=======
+            <h3  class="teal--text">LaemmyYummies</h3></a>
+>>>>>>> cccfa7d126c6cf6015cc4cb983d323530e628f31
             </div>
     <v-card
     color="#1F7087"
