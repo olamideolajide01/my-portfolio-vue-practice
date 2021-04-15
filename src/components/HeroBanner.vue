@@ -7,15 +7,15 @@
     class="max-auto" 
 
     >
-    <v-row justify="center" >
+    <v-row justify="center" align="center">
 
       <v-col 
       cols="12" sm="12" md="6" lg="4"
-       class="text-center mt-12" >
+       class="text-center mt-14" >
         <div>
          <h2 class="red--text">HI THERE,</h2>
          <h1 class="white--text">I'm Olamide Olajide</h1>
-         <p class="white--text">A Software Developer</p>
+         <p class="red--text">A Software Developer</p>
          
       </div>
             <div  >
@@ -39,7 +39,7 @@
       height="600"
       width="600"
       contain 
-      class="mr-12  mx-auto" 
+      class=" mx-auto" 
       >
       </v-img>
       

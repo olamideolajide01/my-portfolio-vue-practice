@@ -13,7 +13,7 @@
     </v-row>
 
     <v-row justify="center" class="mt-16">
-    <a href="#">   <p class="grey--text mt-16 pt-16" style="font-family:lobster;">Designed & Built by Olamide Olajide</p></a>
+    <a href="https://github.com/olamideolajide01" class="text-decoration-none">   <p class="grey--text mt-16 pt-16" style="font-family:lobster;">Designed & Built by Olamide Olajide</p></a>
     </v-row>
  
  </v-container>

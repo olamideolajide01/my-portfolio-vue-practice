@@ -3,7 +3,7 @@
    <v-app-bar
    app
    flat
-   color="grey lighten-5"
+   color="grey lighten-5 "
    >
    <div class="text-center d-flex">
   <v-icon  color="teal" dark large class="mx-3">mdi-satellite-variant</v-icon>
@@ -26,7 +26,7 @@
    </v-app-bar>
 
 
-   <v-main class="mx-0 black">
+   <v-main class="ma-0  black">
      <router-view></router-view>
    </v-main>
 
@@ -37,22 +37,22 @@
         temporary
         hide-overlay
         right
-        class="black lighten-2" dark
+        class="black lighten-5" dark
         
         >
         <v-row justify="end"  class="mt-5 pr-6">
-       <v-btn  @click="drawer=!hideDrawer">  <v-icon color="white">mdi-close</v-icon> </v-btn> 
+       <v-btn  @click="drawer=false">  <v-icon color="white">mdi-close</v-icon> </v-btn> 
           </v-row>
 
               <v-row  class="mt-5 text-center col-12" justify="center" dense >
                 <v-col cols="12" class="ma-2">
-                <v-btn class="mr-1" text > <a  @click="$vuetify.goTo('#about')">ABOUT</a></v-btn>
+                <v-btn class="mr-1 info--text" text > <a class="white--text"  @click="$vuetify.goTo('#about')">ABOUT</a></v-btn>
                 </v-col>
                 <v-col cols="12" class="ma-2">
-                <v-btn class="mr-1" text ><a  @click="$vuetify.goTo('#projects')">PROJECTS</a></v-btn>
+                <v-btn class="mr-1 white--text" text ><a class="white--text" @click="$vuetify.goTo('#projects')">PROJECTS</a></v-btn>
                 </v-col>
                 <v-col cols="12" class="ma-2">
-                <v-btn class="mr-1" text ><a  @click="$vuetify.goTo('#contact')">CONTACT</a></v-btn>
+                <v-btn class="mr-1 amber--text" text ><a class="white--text" @click="$vuetify.goTo('#contact')">CONTACT</a></v-btn>
                 </v-col>
                 </v-row>
                 <!-- <v-row justify="center" align="center" class="mt-3">
@@ -89,10 +89,6 @@
         this.hideDrawer()
       }
   },
-      group () {
-        this.drawer = false
-    
-    },
 
     },
 
