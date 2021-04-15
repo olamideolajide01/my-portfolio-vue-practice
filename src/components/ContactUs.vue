@@ -12,12 +12,10 @@
            <v-btn large outlined color="teal"> say HELLO </v-btn></a>
     </v-row>
 
+
     <v-row justify="center" class="mt-16">
-<<<<<<< HEAD
     <a href="https://github.com/olamideolajide01" class="text-decoration-none">   <p class="grey--text mt-16 pt-16" style="font-family:lobster;">Designed & Built by Olamide Olajide</p></a>
-=======
-    <a href="https://olamide-olajide.netlify.app/" class="text-decoration-none">   <p class="grey--text mt-16 pt-16" style="font-family:lobster;">Designed & Built by Olamide Olajide</p></a>
->>>>>>> cccfa7d126c6cf6015cc4cb983d323530e628f31
+   
     </v-row>
  
  </v-container>
